@@ -1,10 +1,12 @@
 class Account {
     double balance;
+    String account;
     Account() {
         balance = 0;
     }
-    Account(double b, double x) {
+    Account(double b, String x) {
         balance = b;
+        account = "ah789";
     }
     void deposit(double amount) {
         balance = balance + amount;
@@ -14,7 +16,7 @@ class Account {
     }
     public static void main(String[] args) {
 
-        Account a = new Account(2000, 0);
+        Account a = new Account(2000, "ah789");
 
         a.deposit(978);
         a.withdraw(444);
